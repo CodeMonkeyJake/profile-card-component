@@ -15,18 +15,31 @@
  
 
 body {
-  font-family:'Kumbh Sans' sans-serif ;
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+ 
   font-size: 15px;
+  background-color: var(--Dark-cyan);
+  background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
+background-position: top 90%  left -10% , right -5% top -50%;
+background-repeat: no-repeat  ;
+
 }
 
 
+
 .container {
-  margin-top: 75px;
-  margin-left: 35px;
+  font-family: 'kumbh sans' ,sans-serif;
+  font-weight: 400;
+margin-top: 20vh;
+  flex-shrink: 0;
+  
   border: solid 1px black;
   border-radius: 10px;
   overflow: hidden;
 width: 300px;
+background-color: white;
 
 }
 
@@ -35,13 +48,7 @@ width: 300px;
 .imgcontainer {
   padding-left: 20px;
 }
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
+
 
 .person {
   padding-left: 80px;
@@ -51,12 +58,50 @@ width: 300px;
   margin-top: -50px;
 }
 .info {
+
+  display:flex;
+  flex-direction: column;
+ text-align: center;
+ margin-right: 75px; 
+  margin-top: 15px; 
+   padding-bottom: 15px;
+}
+.info span {
+  color: gray;
+}
+
+.city {
   
-  margin-top: 15px;
-  padding-bottom: 15px;
 }
 
 .stats  {
-  padding: 50px 5px 15px 5px ;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 5px 15px   0px ;
   border-top: solid 1px lightgray;
+}
+
+.stats span {
+  color: gray;
+}
+.stats div p  {
+  font-weight: 700;
+}
+
+
+.attribution { display: block;
+  font-size: 11px;
+  text-align: center;
+  padding-top: 10px;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1658px)
+{
+.body {
+  background-position: top -140%  left -10% , right -5% top -50%;
+}
+
 }
