@@ -18,11 +18,10 @@ body {
   display: flex;
   flex-direction: row;
  justify-content: center;
- 
   font-size: 15px;
   background-color: var(--Dark-cyan);
   background-image: url(/images/bg-pattern-top.svg), url(/images/bg-pattern-bottom.svg);
-background-position: top 90%  left -10% , right -5% top -50%;
+background-position: top -50vh  left -5vw , bottom -75vh right -5vw;
 background-repeat: no-repeat  ;
 
 }
@@ -98,10 +97,3 @@ background-color: white;
   color: hsl(228, 45%, 44%);
 }
 
-@media (max-width: 1658px)
-{
-.body {
-  background-position: top -140%  left -10% , right -5% top -50%;
-}
-
-}
